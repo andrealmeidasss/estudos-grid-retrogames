@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: minmax(150px, auto);
+    gap: 10px;
+    margin: 10px;
+
+    grid-template-areas:
+        "box1 box1 box1 box1"
+        "box1 box1 box1 box1"
+        "box2 box3 box3 box3"
+        "box2 box3 box3 box3"
+        "box2 box3 box3 box3"
+        "box2 box3 box3 box3"
+        "box4 box4 box4 box4"
+    ;
+
+    width: 90%;
+    margin: 10px auto;
+
+
+
+}
+
+body {
+    background-color: #3E0875;
+}
+
+
+
+.box {
+
+    border-radius: 20px;
+    background-color: rgb(0, 153, 255);
+    background-size: 400px;
+    background-repeat: no-repeat;
+
+}
+
+.box1 {
+    grid-area: box1;
+    background-image: url(img/img-header2.png);
+    background-position: center center;
+    background-color: #3E0875;
+
+}
+
+.box1:hover {
+
+    background-size: 600px;
+    transition: 0.7s;
+
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.274);
+
+
+
+
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.274);
+
+}
+
+.box4 {
+    grid-area: box4;
+    background-color: #3E0875;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+
+img {
+    width: 21px;
+}
+
+h1 {
+    text-align: center;
+    color: #3E0875;
+    font-family: 'Prosto One', cursive;
+
+
+}
+
+h3 {
+    font-size: 20px;
+    color: #3E0875;
+}
+
+p {
+    width: 700px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+}
+
+a {
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    text-decoration: none;
+    color: #3E0875;
+}
+
+a:hover {
+    color: aqua;
+    transition: 0.4s;
+}
+
+.img-index {
+    display: block;
+    margin: 0 auto;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.box3 img {
+    width: 700px;
+}
+
+.box3 h1 {
+    padding: 20px;
+}
+
+.cogumelo {
+    width: 50px;
+}
